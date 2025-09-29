@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mail Service</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="r4.jpg" alt="Site Logo" style="height:50px;">
+    </a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="prices.html">Prices</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<div id="home" class="hero">
+  <h1>SEND IT YOUR WAY</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showForm('send', this)">Send</div>
+    <div class="tab" onclick="showForm('track', this)">Track</div>
+  </div>
+
+  <!-- Send Form -->
+  <div id="send" class="form active">
+    <select>
+      <option>Select an item from 87p</option>
+    </select>
+    <button>Send your item</button>
+    <p><a href="prices.html">Already have a label? Arrange a collection only</a></p>
+    <p>
+      <a href="prices.html">UK delivery prices</a> |
+      <a href="prices.html">International prices</a>
+    </p>
+  </div>
+
+  <!-- Track Form -->
+ <div id="track" class="form">
+    <input type="text" id="trackingNumber" placeholder="Enter Tracking Number">
+    <button id="trackBtn">track</button>
+    <div id="trackingResult"></div>
+</div>
+<section id="slideshow">
+  <h2>Our Services</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="royal_mail.webp" alt="Fast Delivery">
+    </div>
+    <div class="slide fade">
+      <img src="r3.jpg" alt="Global Shipping">
+    </div>
+    <div class="slide fade">
+      <img src="r2.webp" alt="Secure Packages">
+    </div>
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- Dots -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="page">
+  <h2>Why Choose Us?</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>🚀 Fast Delivery</h3>
+      <p>Next-day delivery available across the UK.</p>
+    </div>
+    <div class="service-box">
+      <h3>🌍 Global Shipping</h3>
+      <p>Send items to over 200 countries worldwide.</p>
+    </div>
+    <div class="service-box">
+      <h3>📦 Secure Handling</h3>
+      <p>Your packages are handled with the utmost care.</p>
+    </div>
+    <div class="service-box">
+      <h3>📞 24/7 Support</h3>
+      <p>Friendly support team available anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="page">
+  <h2>How It Works</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>1️⃣ Prepare</h3>
+      <p>Pack your item safely and choose the right service.</p>
+    </div>
+    <div class="service-box">
+      <h3>2️⃣ Send</h3>
+      <p>Drop it off or schedule a collection from your home.</p>
+    </div>
+    <div class="service-box">
+      <h3>3️⃣ Track</h3>
+      <p>Use your tracking number to follow your parcel’s journey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Delivery Options -->
+<section id="delivery-options" class="page">
+  <h2>Delivery Options</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>⚡ Express</h3>
+      <p>Next-day delivery with full tracking included.</p>
+    </div>
+    <div class="service-box">
+      <h3>📬 Standard</h3>
+      <p>2-3 working days across the UK with updates.</p>
+    </div>
+    <div class="service-box">
+      <h3>💸 Economy</h3>
+      <p>Affordable shipping for non-urgent items worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section id="stats" class="page">
+  <h2>Trusted by Thousands</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>📦 50,000+</h3>
+      <p>Parcels delivered successfully</p>
+    </div>
+    <div class="service-box">
+      <h3>🌍 200+</h3>
+      <p>Countries we deliver to</p>
+    </div>
+    <div class="service-box">
+      <h3>⭐ 4.9/5</h3>
+      <p>Customer satisfaction rating</p>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section id="cta" class="page" style="background:#f1f1f1; padding:60px;">
+  <h2>Ready to Send Your Parcel?</h2>
+  <p>Get started today with our fast, secure, and affordable services.</p>
+  <a href="#send" class="btn">📮 Start Sending</a>
+  <a href="#track" class="btn">🔍 Track Item</a>
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About</h3>
+      <a href="about.html">About Us</a>
+      <p>We provide fast and secure delivery services worldwide. Track your parcels anytime, anywhere.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact / Support</h3>
+       <a href="contact.html">Contact Us</a>
+      <p>Email: royalmailunitedkingdom65@gmail.com</p>
+      <p>Phone: +44 1234 567890</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Legal</h3>
+      <a href="terms.html">Terms & Conditions</a><br>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X"></a>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2025 YourExpress. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
